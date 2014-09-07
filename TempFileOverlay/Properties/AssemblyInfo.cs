@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TestFileHandler")]
+[assembly: AssemblyTitle("TempFileOverlay")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SCJ Alliance")]
-[assembly: AssemblyProduct("TestFileHandler")]
+[assembly: AssemblyProduct("TempFileOverlay")]
 [assembly: AssemblyCopyright("Copyright © SCJ Alliance 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

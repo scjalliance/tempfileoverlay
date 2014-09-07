@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using Microsoft.Win32;
 using System.IO;
 
-namespace TestFileHandler
+namespace TempFileOverlay
 {
     [Flags]
     public enum HFLAGS : uint
@@ -38,7 +38,7 @@ namespace TestFileHandler
 
     [ComVisible(true)]
     [Guid("6e2453c9-d248-45a9-8286-00f250af8d9a")]
-    public class TestFileHandler : IShellIconOverlayIdentifier
+    public class TempFileOverlay : IShellIconOverlayIdentifier
     {
         int IShellIconOverlayIdentifier.IsMemberOf(string path, uint attributes)
         {
@@ -60,7 +60,7 @@ namespace TestFileHandler
 
         public int GetOverlayInfo(IntPtr iconFileBuffer, int iconFileBufferSize, out int iconIndex, out uint flags)
         {
-            string iconFile = "C:/ProgramData/TestFileHandler/ConflictIcon.ico";
+            string iconFile = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86) + "/TempFileOverlay/ConflictIcon.ico";
             int bytesCount = System.Text.Encoding.Unicode.GetByteCount(iconFile);
             byte[] bytes = System.Text.Encoding.Unicode.GetBytes(iconFile);
 

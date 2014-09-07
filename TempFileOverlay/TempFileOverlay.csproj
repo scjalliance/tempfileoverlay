@@ -7,8 +7,8 @@
     <ProjectGuid>{FAF76BFA-AF03-407C-87B4-033C35146F2E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestFileHandler</RootNamespace>
-    <AssemblyName>TestFileHandler</AssemblyName>
+    <RootNamespace>TempFileOverlay</RootNamespace>
+    <AssemblyName>TempFileOverlay</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestFileHandler.cs" />
+    <Compile Include="TempFileOverlay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

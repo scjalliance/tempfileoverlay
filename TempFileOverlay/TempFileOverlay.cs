@@ -60,7 +60,7 @@ namespace TempFileOverlay
 
         public int GetOverlayInfo(IntPtr iconFileBuffer, int iconFileBufferSize, out int iconIndex, out uint flags)
         {
-            string iconFile = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86) + "/TempFileOverlay/ConflictIcon.ico";
+            string iconFile = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) + "/TempFileOverlay/ConflictIcon.ico";
             int bytesCount = System.Text.Encoding.Unicode.GetByteCount(iconFile);
             byte[] bytes = System.Text.Encoding.Unicode.GetBytes(iconFile);
 
